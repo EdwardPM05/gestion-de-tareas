@@ -50,3 +50,36 @@
   .task-actions button:hover {
     opacity: 0.9;
   }
+
+  /* ... (Estilos existentes) ... */
+
+.task-actions .restore-btn {
+  background-color: #28a745; /* Un verde para restaurar */
+}
+
+.task-actions .restore-btn:hover {
+  background-color: #218838;
+}
+
+/* Opcional: Estilo para tareas lógicamente eliminadas si se muestran en la lista principal */
+.task-item.soft-deleted {
+  background-color: #fcecec; /* Un rojo muy claro */
+  border-left: 5px solid #e74c3c;
+  opacity: 0.7; /* Opcional: hacerlo un poco transparente */
+}
+
+.task-item.soft-deleted .task-text {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #999;
+}
+
+/* ... (Estilos existentes) ... */
+
+.task-actions .permanent-delete-btn {
+  background-color: #c0392b; /* Un rojo más oscuro y más definitivo */
+}
+
+.task-actions .permanent-delete-btn:hover {
+  background-color: #a93226;
+}
