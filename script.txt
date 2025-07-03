@@ -1,0 +1,11 @@
+create database task_db
+use task_db
+CREATE TABLE tasks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    text VARCHAR(255) NOT NULL,
+    completed BOOLEAN DEFAULT FALSE
+);	
+
+ALTER TABLE tasks ADD COLUMN is_deleted BOOLEAN DEFAULT FALSE;
+
+SELECT * FROM tasks;
