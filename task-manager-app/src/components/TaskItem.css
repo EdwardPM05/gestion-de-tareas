@@ -1,0 +1,52 @@
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item.completed {
+    background-color: #d4edda; /* Un verde más claro para tareas completadas */
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #2c3e50;
+    word-break: break-word; /* Rompe palabras largas para que no desborden */
+  }
+  
+  .task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #7f8c8d;
+  }
+  
+  .task-actions button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .task-actions .edit-btn {
+    background-color: #f39c12; /* Naranja para editar */
+  }
+  
+  .task-actions .delete-btn {
+    background-color: #e74c3c; /* Rojo para eliminar */
+  }
+  
+  .task-actions button:hover {
+    opacity: 0.9;
+  }

@@ -1,0 +1,11 @@
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .no-tasks-message {
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 20px;
+  }
